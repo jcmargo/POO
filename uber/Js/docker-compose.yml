@@ -1,0 +1,7 @@
+services:
+  poojs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/Js

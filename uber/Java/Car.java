@@ -1,12 +1,18 @@
 class Car {
     Integer id;
     String license;
-    String driver;
+    Account driver;
     Integer passenger;
 
+    //metodo constructor
+    public Car(String license, Account driver) {
+        this.license = license;
+        this.driver = driver;
+    }
 
+    //functions
     void printDataCar() {
-        System.out.println("License: " + license + " Driver: "+ driver + " number of Passenger: " + passenger);
+        System.out.println("License: " + license + " Name Driver: "+ driver.name);
         
     }
 }
