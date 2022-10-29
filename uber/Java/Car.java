@@ -2,7 +2,7 @@ class Car {
     Integer id;
     String license;
     Account driver;
-    Integer passenger;
+    private Integer passenger;
 
     //metodo constructor
     public Car(String license, Account driver) {
@@ -14,5 +14,14 @@ class Car {
     void printDataCar() {
         System.out.println("License: " + license + " Name Driver: "+ driver.name);
         
+    }
+
+    //acceder a dato privado
+    public Integer getPassenger(){
+        return passenger;
+    }
+
+    public void setPassenger(Integer passenger){
+        this.passenger = passenger;
     }
 }
