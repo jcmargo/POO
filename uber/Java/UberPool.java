@@ -8,4 +8,13 @@ class UberPool extends Car {
         this.model = model;
 
     }
+
+    @Override
+    public void setPassenger(Integer passenger) {
+        if(passenger == 4){
+            super.setPassenger(passenger);
+        }else{
+            System.out.println("UberVan needs 4 passengers assigned");
+        }
+    }
 }

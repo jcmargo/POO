@@ -10,4 +10,13 @@ class UberBlack extends Car {
         this.typeCarAccepted = typeCarAccepted;
         this.seatMaterial = seatMaterial;
     }
+
+    @Override
+    public void setPassenger(Integer passenger) {
+        if(passenger == 4){
+            super.setPassenger(passenger);
+        }else{
+            System.out.println("UberVan needs 4 passengers assigned");
+        }
+    }
 }
