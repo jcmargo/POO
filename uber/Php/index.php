@@ -1,7 +1,10 @@
 <?php
 
 require_once('Car.php');
-require_once('Account.php');
+require_once('uberX.php');
+require_once('account.php');
 
-$car = new Car("AW456", new Account("Andres Herrera", "AMS123"));
-$car->printDataCar();
+$uberX = new UberX("AW456", new Account("Andres Herrera", "AMS123"), "Chevrolet", "Spark");
+$uberX->printDataCar();
+
+?>
